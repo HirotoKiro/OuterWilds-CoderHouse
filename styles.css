@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0; 
+    text-decoration: none;
+}
+
+/*Aplicacion de grids + media query*/
+
+.grid2Columns{
+    display: grid;
+    width: 50%;
+    grid-template-columns: 2fr 2fr;
+}
+
+/*Tablet Style*/
+
+@media screen and (max-width: 768px){
+    .grid2Columns{
+        display: grid;
+        width: 75%;
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Mobile Style*/
+
+@media screen and (max-width: 480px){
+    .grid2Columns{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}
+
+.menu-fixed {
+    display: flex;
+}
+
+.header-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div nav ul li a{
+    color: #fe6e00;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+ul li a{
+    list-style: none; 
+    background-color:#7d7d7d00;
+    color:#ff994a;
+    display: inline-block;
+    padding: 05px; 
+    margin: 05px;
+    font-size: 125%;
+}
+
+.logo {
+   position: relative;
+   top: 0px;
+}
+
+.paragraph-title{
+    color:#ff994a;
+    margin: 20px;
+    font-size: 200%;
+}
+
+.paragraph{
+    color:#ff994a;
+    margin: 20px;
+    font-size: 160%;
+    width: auto;
+}
+
+/*Mobile Style (Tablet Style not required)*/
+
+@media screen and (max-width: 480px){
+    .paragraph{
+        color:#ff994a;
+        margin: 20px;
+        font-size: 160%;
+        width: 100%;
+    }
+}
+
+.fondo-inicio {
+    background-image: url(./images/outer-wilds-portada.png);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    background-color:#75757579;
+    color:#000000;
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    text-align: center;
+    padding:1em 0;
+}
+
+hr{
+    height: 1px;
+    background-color: #ff994a;
+    border: none;
+    width: 100%;
+}
+
+label{
+    color:#ff994a;
+    display: flex;
+}
+
+/*Tablet Style (Mobile not required*/
+
+@media screen and (max-width: 768px){
+    label{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    input {
+        margin-left: 25%;
+    }
+    select {
+        margin-left: 30%;
+    }
+}
+
+.formContainer {
+    display: flex;
+    justify-content: left;
+}
+
+@media screen and (max-width: 768px){
+    .formContainer{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }   
+}
+
+@media screen and (max-width: 480px){
+    .formContainer{
+        margin-left: 30%;
+        font-size: 160%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }   
+}
